@@ -29,8 +29,9 @@
     <string notr="true">color: rgb(243, 243, 243);
 font-size:14pt;
 background-color: rgba(47,49,52,200);
-border-radius:2px;
-border-bottom-color:rgba(46,82,101,255)</string>
+border-radius:7px;
+border-bottom-color:rgba(46,82,101,255)
+</string>
    </property>
    <property name="text">
     <string/>
@@ -52,7 +53,7 @@ border-bottom-color:rgba(46,82,101,255)</string>
     <string notr="true">color: rgb(243, 243, 243);
 font-size:14pt;
 background-color: rgba(47,49,52,200);
-border-radius:2px;
+border-radius:7px;
 border-bottom-color:rgba(46,82,101,255)</string>
    </property>
    <property name="placeholderText">
@@ -97,7 +98,7 @@ font-size:14pt;
     <string>Не маєте аккаунта?</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="creataccbutton">
+  <widget class="QPushButton" name="registerbutton">
    <property name="geometry">
     <rect>
      <x>160</x>
@@ -115,7 +116,7 @@ font-size:16pt;
 </string>
    </property>
    <property name="text">
-    <string>Регістрація</string>
+    <string>Реєстрація</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_5">
@@ -139,6 +140,24 @@ border-radius: 20px;
    </property>
    <property name="text">
     <string>🔓︎</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="errorla">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>440</y>
+     <width>431</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 39, 32);
+font-size:24pt;
+</string>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
  </widget>
