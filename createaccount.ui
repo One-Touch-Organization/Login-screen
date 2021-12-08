@@ -16,27 +16,11 @@
   <property name="styleSheet">
    <string notr="true">background-color: rgb(29, 29, 29);</string>
   </property>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>180</x>
-     <y>160</y>
-     <width>141</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: rgb(196, 222, 25);</string>
-   </property>
-   <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;Регістрація&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="email">
+  <widget class="QLineEdit" name="emailfield">
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>250</y>
+     <y>200</y>
      <width>441</width>
      <height>41</height>
     </rect>
@@ -45,38 +29,18 @@
     <string notr="true">color: rgb(243, 243, 243);
 font-size:14pt;
 background-color: rgba(47,49,52,200);
-border-radius:2px;
+border-radius:7px;
 border-bottom-color:rgba(46,82,101,255)</string>
    </property>
    <property name="placeholderText">
-    <string>Введіть електрону адресу</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="password">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>330</y>
-     <width>441</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: rgb(243, 243, 243);
-font-size:14pt;
-background-color: rgba(47,49,52,200);
-border-radius:2px;
-border-bottom-color:rgba(46,82,101,255)</string>
-   </property>
-   <property name="placeholderText">
-    <string>Введіть пароль</string>
+    <string>Введіть електронну адресу</string>
    </property>
   </widget>
   <widget class="QPushButton" name="signupbutton">
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>470</y>
+     <y>370</y>
      <width>441</width>
      <height>61</height>
     </rect>
@@ -92,11 +56,11 @@ border-radius: 10px;
     <string>Зареєструватися</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="confirmpassword">
+  <widget class="QLineEdit" name="passwordfield">
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>410</y>
+     <y>250</y>
      <width>441</width>
      <height>41</height>
     </rect>
@@ -105,20 +69,20 @@ border-radius: 10px;
     <string notr="true">color: rgb(243, 243, 243);
 font-size:14pt;
 background-color: rgba(47,49,52,200);
-border-radius:2px;
+border-radius:7px;
 border-bottom-color:rgba(46,82,101,255)</string>
    </property>
    <property name="placeholderText">
-    <string>Введіть пароль повторно</string>
+    <string>Введіть пароль</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>30</y>
+     <y>10</y>
      <width>131</width>
-     <height>131</height>
+     <height>141</height>
     </rect>
    </property>
    <property name="font">
@@ -133,6 +97,83 @@ border-radius: 20px;
    </property>
    <property name="text">
     <string>📷</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="confirmpasswordfield">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>300</y>
+     <width>441</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(243, 243, 243);
+font-size:14pt;
+background-color: rgba(47,49,52,200);
+border-radius:7px;
+border-bottom-color:rgba(46,82,101,255)</string>
+   </property>
+   <property name="placeholderText">
+    <string>Введіть пароль повторно</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>510</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(238, 238, 238);
+font-size:14pt;
+</string>
+   </property>
+   <property name="text">
+    <string>Вже зареєстровані?</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="goinbutton">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>570</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(238, 238, 238);
+border-radius: 10px;
+background-color: rgb(45, 45, 59);
+font-size:16pt;
+
+</string>
+   </property>
+   <property name="text">
+    <string>Увійти</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="errorla">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>450</y>
+     <width>431</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 39, 32);
+font-size:22pt;
+</string>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
  </widget>
