@@ -70,11 +70,18 @@ border-bottom-color:rgba(46,82,101,255)</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(145, 118, 148);
-color: rgb(238, 238, 238);
-font-size:24pt;
-border-radius: 10px;
-</string>
+    <string notr="true">QPushButton {
+	background-color: rgb(145, 118, 148);
+	color: rgb(238, 238, 238);
+	font-size:24pt;
+	border-radius: 10px;
+}
+QPushButton:hover{
+    background-color: rgb(50, 130, 148);
+}
+QPushButton:pressed{
+    background-color: rgb(145, 118, 148);
+}</string>
    </property>
    <property name="text">
     <string>Увійти</string>
@@ -108,12 +115,18 @@ font-size:14pt;
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(238, 238, 238);
-border-radius: 10px;
-background-color: rgb(45, 45, 59);
-font-size:16pt;
-
-</string>
+    <string notr="true">QPushButton {
+	color: rgb(238, 238, 238);
+	border-radius: 10px;
+	background-color: rgb(45, 45, 59);
+	font-size:16pt;
+}
+QPushButton:hover{
+	background-color: rgb(20, 45, 70);
+}
+QPushButton:pressed{
+	background-color: rgb(45, 45, 59);
+}</string>
    </property>
    <property name="text">
     <string>Реєстрація</string>
@@ -169,8 +182,24 @@ font-size:22pt;
      <height>41</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
    <property name="text">
-    <string>PushButton</string>
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>eye.png</normaloff>eye.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>33</width>
+     <height>33</height>
+    </size>
+   </property>
+   <property name="default">
+    <bool>false</bool>
    </property>
   </widget>
  </widget>
