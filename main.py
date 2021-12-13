@@ -96,7 +96,8 @@ class Mainwindow(QMainWindow): #окно регестрации
     def __init__(self):
         super(Mainwindow,self).__init__()
         loadUi("mainwindow.ui",self)
-        self.setWindowTitle("Бимбам")
+        self.setWindowTitle("Пошук курсанта")
+        self.setWindowIcon(QIcon('imgonline-com-ua-Resize-k7CyPSyWfYD7.jpg'))
 
 #main
 
